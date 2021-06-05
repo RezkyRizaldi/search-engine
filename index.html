@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font Awesome CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.min.css" />
+
+    <!-- JavaScript Module -->
+    <script type="module" src="./assets/js/main.js"></script>
+
+    <title>Search Engine</title>
+  </head>
+  <body>
+    <main>
+      <h1 class="offscreen">Search Engine</h1>
+      <section class="search_entry">
+        <h2 class="offscreen">Search Term Entry</h2>
+        <div class="logo" aria-hidden="true">
+          <span class="blue">S</span>
+          <span class="red">e</span>
+          <span class="yellow">a</span>
+          <span class="blue">r</span>
+          <span class="green">c</span>
+          <span class="red">h</span>
+          <span class="blue">M</span>
+          <span class="yellow">e</span>
+          <span class="red exclaim">!</span>
+        </div>
+        <form role="search" id="searchBar" class="search_bar">
+          <label for="search" class="offscreen">Enter a keyword</label>
+          <input type="text" id="search" autocomplete="off" role="searchbox" />
+          <div id="clear" class="none button clear" role="button" tabindex="0" aria-label="Clear search terms">
+            <i class="fas fa-times"></i>
+          </div>
+          <button type="submit" id="searchBtn" class="btn search_btn" aria-label="Submit button">
+            <i class="fas fa-search blue"></i>
+          </button>
+        </form>
+      </section>
+      <section class="results">
+        <h2 class="offscreen">Search Results</h2>
+        <div class="stats_bar">
+          <div id="stats" class="stats" aria-live="assertive"></div>
+        </div>
+        <div id="searchResults" class="search_results"></div>
+      </section>
+    </main>
+    <footer>
+      <p><span aria-hidden="true">&lt;&lt;</span> Powered by <a href="https://www.wikipedia.org" target="_blank">Wikipedia</a> <span aria-hidden="true">&gt;&gt;</span></p>
+    </footer>
+
+    <!-- Font Awesome JavaScript -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"
+      integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>
